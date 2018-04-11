@@ -1,0 +1,2047 @@
+{
+	"name": "evMenu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "chooseFolder",
+			"type": "string",
+			"initialValue": "",
+			"comment": "Sezione in cui è stata scelta una cartella dal disco",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 163921886164582
+		},
+		{
+			"eventType": "variable",
+			"name": "cartellaSelezionata",
+			"type": "string",
+			"initialValue": "",
+			"comment": "Cartella selezionata su cui lavorare",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 807325067442484
+		},
+		{
+			"eventType": "variable",
+			"name": "isPackageInFolder",
+			"type": "string",
+			"initialValue": "No",
+			"comment": "Nella cartella selezionata sono stati scaricati i file per installare e lanciare local server",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 599436621674884
+		},
+		{
+			"eventType": "variable",
+			"name": "isNodeModulesInFolder",
+			"type": "string",
+			"initialValue": "No",
+			"comment": "Nella cartella selezionata è presente la cartella node_modules",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 885401158743783
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 620879942152188
+				}
+			],
+			"actions": [
+				{
+					"id": "set-resizable",
+					"objectClass": "NWjs",
+					"sid": 315538616354497,
+					"parameters": {
+						"mode": "not-resizable"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 139648515415913,
+					"parameters": {
+						"name": "\"sincronizzaTesto\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 582595807947079,
+					"parameters": {
+						"name": "\"setCSS\"",
+						"parameter-n": [
+							"\"button\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 185110616795819,
+					"parameters": {
+						"name": "\"setCSS\"",
+						"parameter-n": [
+							"\"circle\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 163538129579435,
+					"parameters": {
+						"name": "\"controllaSeCiSonoTuttiIFile\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "Impostazioni",
+					"sid": 707571654690613,
+					"parameters": {
+						"key": "\"cartellaSelezionata\""
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "NWjs",
+					"sid": 778068073959495,
+					"disabled": true,
+					"parameters": {
+						"width": "1000"
+					}
+				},
+				{
+					"id": "set-height",
+					"objectClass": "NWjs",
+					"sid": 574546305868708,
+					"disabled": true,
+					"parameters": {
+						"height": "500"
+					}
+				},
+				{
+					"id": "set-minimum-size",
+					"objectClass": "NWjs",
+					"sid": 796658847119332,
+					"disabled": true,
+					"parameters": {
+						"min-width": "1000",
+						"min-height": "500"
+					}
+				},
+				{
+					"id": "set-maximum-size",
+					"objectClass": "NWjs",
+					"sid": 241983320444744,
+					"disabled": true,
+					"parameters": {
+						"max-width": "1000",
+						"max-height": "500"
+					}
+				},
+				{
+					"id": "set-resizable",
+					"objectClass": "NWjs",
+					"sid": 813070890989102,
+					"parameters": {
+						"mode": "not-resizable"
+					}
+				}
+			],
+			"sid": 293146479753038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "button",
+					"sid": 218155548030070
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 454383913574976,
+					"parameters": {
+						"name": "\"selezionaFunzione\"",
+						"parameter-n": [
+							"button.UID",
+							"button.onClick"
+						]
+					}
+				}
+			],
+			"sid": 696117197691738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 716491055850902,
+					"parameters": {
+						"name": "\"selezionaFunzione\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 848856576377638,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "button",
+							"sid": 689792541059282,
+							"parameters": {
+								"unique-id": "Function.Param(0)"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 774585943871912,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 908089262346573,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"downloadOnLine\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "invoke-download",
+									"objectClass": "Browser",
+									"sid": 430674114853958,
+									"parameters": {
+										"url": "button.dettagliOnClick",
+										"filename": "\"\""
+									}
+								}
+							],
+							"sid": 320207174380355
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 772064479785698,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"downloadLocalWithName\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 432473220730679,
+									"parameters": {
+										"js-function-name": "\"getProjectFileUrl\"",
+										"js-function-parameters": [
+											"button.dettagliOnClick"
+										]
+									}
+								},
+								{
+									"id": "invoke-download",
+									"objectClass": "Browser",
+									"sid": 761210687586599,
+									"parameters": {
+										"url": "ValerypopoffJS.StoredReturnValue",
+										"filename": "button.parametriOnClick1"
+									}
+								}
+							],
+							"sid": 375635515887287
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 300316684604898,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"chooseFolder\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 336723100914986,
+									"parameters": {
+										"variable": "chooseFolder",
+										"value": "\"scarica local server\""
+									}
+								},
+								{
+									"id": "show-folder-dialog",
+									"objectClass": "NWjs",
+									"sid": 255461351310959
+								}
+							],
+							"sid": 874798667729492
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 579372140851969,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"copiaFileLocalServer\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 569670605378416,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_package_json\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 306793312005987,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/package.json\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								},
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 914954486467503,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_key_pem\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 286169232069136,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/key.pem\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								},
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 777834669446074,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_cert_pem\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 557450516642078,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/cert.pem\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								},
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 343598527323869,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_npminstall_bat\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 386944972850310,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/npminstall.bat\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								},
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 294469308301214,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_npmwait_bat\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 390743760852656,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/npmwait.bat\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								},
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 866569075092817,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_npmrunserve_bat\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 302109150037703,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/npmrunserve.bat\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								},
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 844935736725066,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_npmrunservessl_bat\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 756594952008950,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/npmrunservessl.bat\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 523352665577811,
+									"parameters": {
+										"name": "\"controllaSeCiSonoTuttiIFile\"",
+										"parameter-n": []
+									}
+								}
+							],
+							"sid": 262154557595090
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 515176496942677,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"openLink\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "open-url-in-new-window",
+									"objectClass": "Browser",
+									"sid": 744181285925709,
+									"parameters": {
+										"url": "button.dettagliOnClick",
+										"tag": "\"NewWindow\""
+									}
+								}
+							],
+							"sid": 102310629651558
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 656270292213790,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"npmInstall\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 221483225939247,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "commandLine",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 494096610414076
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 587837473084390,
+											"parameters": {
+												"variable": "commandLine",
+												"value": "cartellaSelezionata & \"\\npminstall.bat\""
+											}
+										},
+										{
+											"id": "run-file",
+											"objectClass": "NWjs",
+											"sid": 760234812758539,
+											"parameters": {
+												"path": "\"start \" & commandLine"
+											}
+										},
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 571962400150253,
+											"parameters": {
+												"name": "\"controllaSeCiSonoTuttiIFile\"",
+												"parameter-n": []
+											}
+										}
+									],
+									"sid": 190882244065641
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 580883033306130,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"npmStartServer\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 547787637464386,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "commandLine",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 797303090487252
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 557035603399862,
+											"parameters": {
+												"variable": "commandLine",
+												"value": "cartellaSelezionata & \"\\npmrunserve.bat\""
+											}
+										},
+										{
+											"id": "run-file",
+											"objectClass": "NWjs",
+											"sid": 748559285472552,
+											"parameters": {
+												"path": "\"start \" & commandLine"
+											}
+										}
+									],
+									"sid": 312158364671976
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 462085033260992,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"npmStartServerSSL\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 645413626094095,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "commandLine",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 130557382844407
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 529120595661718,
+											"parameters": {
+												"variable": "commandLine",
+												"value": "cartellaSelezionata & \"\\npmrunservessl.bat\""
+											}
+										},
+										{
+											"id": "run-file",
+											"objectClass": "NWjs",
+											"sid": 568092989746617,
+											"parameters": {
+												"path": "\"start \" & commandLine"
+											}
+										}
+									],
+									"sid": 462647538099750
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 124187478248777,
+					"parameters": {
+						"name": "\"sincronizzaTesto\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 220097097271174,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "familyText",
+							"sid": 744291105548079,
+							"parameters": {
+								"instance-variable": "textSync",
+								"comparison": 1,
+								"value": "\"\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "familyText",
+							"sid": 128671493197931,
+							"disabled": true,
+							"parameters": {
+								"text": "familyText.textSync"
+							}
+						},
+						{
+							"id": "call-js-function",
+							"objectClass": "ValerypopoffJS",
+							"sid": 664388196908226,
+							"parameters": {
+								"js-function-name": "\"getGlobalVarsByName\"",
+								"js-function-parameters": [
+									"familyText.textSync"
+								]
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "familyText",
+							"sid": 595970808756217,
+							"parameters": {
+								"text": "ValerypopoffJS.StoredReturnValue"
+							}
+						}
+					],
+					"sid": 671816150939091
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-folder-dialog-ok",
+					"objectClass": "NWjs",
+					"sid": 578528772467097
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 109824525580014,
+					"parameters": {
+						"variable": "cartellaSelezionata",
+						"value": "NWjs.ChosenPath"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "Impostazioni",
+					"sid": 143910124531572,
+					"parameters": {
+						"key": "\"cartellaSelezionata\"",
+						"value": "cartellaSelezionata"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 658240690582923,
+					"parameters": {
+						"name": "\"sincronizzaTesto\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 202346858565296,
+					"parameters": {
+						"name": "\"controllaSeCiSonoTuttiIFile\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 810977350149398
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 145933346699619,
+					"parameters": {
+						"name": "\"setCSS\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 244357212426508,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 441936109063199,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"button\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 400329551581177,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "button",
+									"sid": 676983313366135,
+									"parameters": {
+										"instance-variable": "class",
+										"comparison": 0,
+										"value": "\"primary\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 669137178927720,
+									"parameters": {
+										"property-name": "\"font-size\"",
+										"value": "\"14px\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 164820275005042,
+									"parameters": {
+										"property-name": "\"background\"",
+										"value": "\"#03a87c\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 737475479272863,
+									"parameters": {
+										"property-name": "\"cursor\"",
+										"value": "\"pointer\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 111870955500517,
+									"parameters": {
+										"property-name": "\"text-align\"",
+										"value": "\"center\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 744103681831267,
+									"parameters": {
+										"property-name": "\"color\"",
+										"value": "\"white\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 356063396318059,
+									"parameters": {
+										"property-name": "\"box-sizing\"",
+										"value": "\"border-box\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 315322591418961,
+									"parameters": {
+										"property-name": "\"border-radius\"",
+										"value": "\"4px\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 142100388190412,
+									"parameters": {
+										"property-name": "\"border\"",
+										"value": "\"1px solid #03a87c\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 856482094537986,
+									"parameters": {
+										"property-name": "\"font-family\"",
+										"value": "\"googlesans400\""
+									}
+								}
+							],
+							"sid": 938545449762637
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "button",
+									"sid": 550886667164309,
+									"parameters": {
+										"instance-variable": "class",
+										"comparison": 0,
+										"value": "\"secondary\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 585487831691883,
+									"parameters": {
+										"property-name": "\"font-size\"",
+										"value": "\"12px\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 795189489005294,
+									"parameters": {
+										"property-name": "\"background\"",
+										"value": "\"white\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 294266905482238,
+									"parameters": {
+										"property-name": "\"cursor\"",
+										"value": "\"pointer\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 562237092973831,
+									"parameters": {
+										"property-name": "\"text-align\"",
+										"value": "\"center\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 502026637392081,
+									"parameters": {
+										"property-name": "\"color\"",
+										"value": "\"#03a87c\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 101681058936662,
+									"parameters": {
+										"property-name": "\"box-sizing\"",
+										"value": "\"border-box\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 413138809953366,
+									"parameters": {
+										"property-name": "\"border-radius\"",
+										"value": "\"4px\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 115466596865968,
+									"parameters": {
+										"property-name": "\"border\"",
+										"value": "\"1px solid #03a87c\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 794431282226766,
+									"parameters": {
+										"property-name": "\"font-family\"",
+										"value": "\"googlesans400\""
+									}
+								}
+							],
+							"sid": 374567088052985
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "button",
+									"sid": 522636894248066,
+									"parameters": {
+										"instance-variable": "class",
+										"comparison": 0,
+										"value": "\"tertiary\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 306204102192791,
+									"parameters": {
+										"property-name": "\"font-size\"",
+										"value": "\"12px\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 157688674088646,
+									"parameters": {
+										"property-name": "\"background\"",
+										"value": "\"white\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 762869271274425,
+									"parameters": {
+										"property-name": "\"cursor\"",
+										"value": "\"pointer\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 737078988212952,
+									"parameters": {
+										"property-name": "\"text-align\"",
+										"value": "\"center\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 643426023041242,
+									"parameters": {
+										"property-name": "\"color\"",
+										"value": "\"#03a87c\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 168510344735631,
+									"disabled": true,
+									"parameters": {
+										"property-name": "\"box-sizing\"",
+										"value": "\"border-box\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 888464434690374,
+									"disabled": true,
+									"parameters": {
+										"property-name": "\"border-radius\"",
+										"value": "\"4px\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 330901161427971,
+									"parameters": {
+										"property-name": "\"border\"",
+										"value": "\"0px solid #03a87c\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 883438383105002,
+									"parameters": {
+										"property-name": "\"border-bottom\"",
+										"value": "\"1px solid #03a87c\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "button",
+									"sid": 646845722989684,
+									"parameters": {
+										"property-name": "\"font-family\"",
+										"value": "\"googlesans400\""
+									}
+								}
+							],
+							"sid": 309256516062550
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 920983660466688,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"circle\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 736446212696606,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "textInput_circle",
+									"sid": 312524527027553,
+									"parameters": {
+										"instance-variable": "class",
+										"comparison": 0,
+										"value": "\"red\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-css-style",
+									"objectClass": "textInput_circle",
+									"sid": 296182025937937,
+									"parameters": {
+										"property-name": "\"background\"",
+										"value": "\"#ff6961\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "textInput_circle",
+									"sid": 429217417905770,
+									"parameters": {
+										"property-name": "\"box-sizing\"",
+										"value": "\"border-box\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "textInput_circle",
+									"sid": 785910345703985,
+									"parameters": {
+										"property-name": "\"border-radius\"",
+										"value": "\"50%\""
+									}
+								}
+							],
+							"sid": 540954038035837
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "textInput_circle",
+									"sid": 991938663323995,
+									"parameters": {
+										"instance-variable": "class",
+										"comparison": 0,
+										"value": "\"green\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-css-style",
+									"objectClass": "textInput_circle",
+									"sid": 780417849736557,
+									"parameters": {
+										"property-name": "\"background\"",
+										"value": "\"#03a87c\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "textInput_circle",
+									"sid": 771756704495586,
+									"parameters": {
+										"property-name": "\"box-sizing\"",
+										"value": "\"border-box\""
+									}
+								},
+								{
+									"id": "set-css-style",
+									"objectClass": "textInput_circle",
+									"sid": 437415058179974,
+									"parameters": {
+										"property-name": "\"border-radius\"",
+										"value": "\"50%\""
+									}
+								}
+							],
+							"sid": 643843149716602
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 818461937157628,
+					"parameters": {
+						"name": "\"ControllaPresenza_EsisteFile\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 273464847851582,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "indirizzoFile",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 314347168384033
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 212787419733757,
+							"parameters": {
+								"variable": "indirizzoFile",
+								"value": "cartellaSelezionata & Function.Param(0)"
+							}
+						}
+					],
+					"sid": 318384240595648
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "path-exists",
+							"objectClass": "NWjs",
+							"sid": 779401797253003,
+							"parameters": {
+								"path": "indirizzoFile"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 410194276411416,
+							"parameters": {
+								"value": "1"
+							}
+						}
+					],
+					"sid": 254513159613555
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 169797496400299
+						}
+					],
+					"actions": [
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 291593888926488,
+							"parameters": {
+								"value": "0"
+							}
+						}
+					],
+					"sid": 444218534938876
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 321045622847997,
+					"parameters": {
+						"name": "\"setIsPackageInFolder\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 286543983732204,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 770266166095711,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"No\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 114127701129919,
+							"parameters": {
+								"variable": "isPackageInFolder",
+								"value": "\"Yes\""
+							}
+						}
+					],
+					"sid": 382951897624858,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "textInput_circle",
+									"sid": 401053557351317,
+									"parameters": {
+										"instance-variable": "sync",
+										"comparison": 0,
+										"value": "\"LOCAL_SERVER_generalfile_settings\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "textInput_circle",
+									"sid": 170228507558615,
+									"parameters": {
+										"instance-variable": "class",
+										"value": "\"red\""
+									}
+								}
+							],
+							"sid": 200957675368824
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 571081381289206
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 304247759524686,
+							"parameters": {
+								"variable": "isPackageInFolder",
+								"value": "\"Yes\""
+							}
+						}
+					],
+					"sid": 797703578160966,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "textInput_circle",
+									"sid": 331994322326264,
+									"parameters": {
+										"instance-variable": "sync",
+										"comparison": 0,
+										"value": "\"LOCAL_SERVER_generalfile_settings\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "textInput_circle",
+									"sid": 879440347617280,
+									"parameters": {
+										"instance-variable": "class",
+										"value": "\"green\""
+									}
+								}
+							],
+							"sid": 358233872562463
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 625171495258232,
+							"parameters": {
+								"name": "\"setCSS\"",
+								"parameter-n": [
+									"\"circle\""
+								]
+							}
+						}
+					],
+					"sid": 630985485225946
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 474322363732328,
+					"parameters": {
+						"name": "\"setIsNodeModulesInFolder\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 731301068369746,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 766298017563179,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "\"No\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 469639781954091,
+							"parameters": {
+								"variable": "isNodeModulesInFolder",
+								"value": "\"Yes\""
+							}
+						}
+					],
+					"sid": 436579546189148,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "textInput_circle",
+									"sid": 987263122544718,
+									"parameters": {
+										"instance-variable": "sync",
+										"comparison": 0,
+										"value": "\"LOCAL_SERVER_generalinstalled_settings\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "textInput_circle",
+									"sid": 105570224680648,
+									"parameters": {
+										"instance-variable": "class",
+										"value": "\"red\""
+									}
+								}
+							],
+							"sid": 931418814705494
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 910827316227850
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 129631009112696,
+							"parameters": {
+								"variable": "isNodeModulesInFolder",
+								"value": "\"Yes\""
+							}
+						}
+					],
+					"sid": 954144163838842,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "textInput_circle",
+									"sid": 906848818393627,
+									"parameters": {
+										"instance-variable": "sync",
+										"comparison": 0,
+										"value": "\"LOCAL_SERVER_generalinstalled_settings\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "textInput_circle",
+									"sid": 851258421814387,
+									"parameters": {
+										"instance-variable": "class",
+										"value": "\"green\""
+									}
+								}
+							],
+							"sid": 588553226341107
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 491094136350954,
+							"parameters": {
+								"name": "\"setCSS\"",
+								"parameter-n": [
+									"\"circle\""
+								]
+							}
+						}
+					],
+					"sid": 780433346925390
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 346281071334926,
+					"parameters": {
+						"name": "\"controllaSeCiSonoTuttiIFile\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 957756477011021,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 162272225930343,
+							"parameters": {
+								"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/LOCAL_SERVER_generalfile.settings\")",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 336757370191653,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 942852578592735,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/cert.pem\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 497166672746852,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/key.pem\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 563607849079104,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/npminstall.bat\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 330484344755279,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/npmrunserve.bat\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 692245116690206,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/npmwait.bat\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 222335132973301,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/package.json\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 596287924220254,
+									"parameters": {
+										"name": "\"setIsPackageInFolder\"",
+										"parameter-n": [
+											"\"Yes\""
+										]
+									}
+								},
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 120751722490871,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_generalfile_settings\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 841585584803506,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/LOCAL_SERVER_generalfile.settings\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								}
+							],
+							"sid": 258763954028454
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 658283011905572
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 234936937977325,
+									"parameters": {
+										"name": "\"setIsPackageInFolder\"",
+										"parameter-n": [
+											"\"No\""
+										]
+									}
+								}
+							],
+							"sid": 616218064948517
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 197342830484033
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 206724565120741,
+							"parameters": {
+								"name": "\"setIsPackageInFolder\"",
+								"parameter-n": [
+									"\"Yes\""
+								]
+							}
+						}
+					],
+					"sid": 992570258477988
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 729222546862697,
+							"parameters": {
+								"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/LOCAL_SERVER_generalinstalled.settings\")",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 572942350402679,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 392150522093369,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"\\node_modules\\http-server\\package.json\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 224743752600660,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/cert.pem\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 262343585812020,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/key.pem\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 875192839642439,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/npmrunserve.bat\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 566290904232791,
+									"parameters": {
+										"first-value": "Function.Call(\"ControllaPresenza_EsisteFile\",\"/package.json\")",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 724949111482683,
+									"parameters": {
+										"name": "\"setIsNodeModulesInFolder\"",
+										"parameter-n": [
+											"\"Yes\""
+										]
+									}
+								},
+								{
+									"id": "call-js-function",
+									"objectClass": "ValerypopoffJS",
+									"sid": 442305508187572,
+									"parameters": {
+										"js-function-name": "\"returnConst\"",
+										"js-function-parameters": [
+											"\"LOCAL_SERVER_generalinstalled_settings\""
+										]
+									}
+								},
+								{
+									"id": "write-file",
+									"objectClass": "NWjs",
+									"sid": 327463251322877,
+									"parameters": {
+										"path": "cartellaSelezionata & \"/LOCAL_SERVER_generalinstalled.settings\"",
+										"contents": "ValerypopoffJS.StoredReturnValue"
+									}
+								}
+							],
+							"sid": 910452494458625
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 586930506331819
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 950789324356756,
+									"parameters": {
+										"name": "\"setIsNodeModulesInFolder\"",
+										"parameter-n": [
+											"\"No\""
+										]
+									}
+								}
+							],
+							"sid": 594267634835814
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 317033732614374
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 948210875058566,
+							"parameters": {
+								"name": "\"setIsNodeModulesInFolder\"",
+								"parameter-n": [
+									"\"Yes\""
+								]
+							}
+						}
+					],
+					"sid": 459966922140681
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 259563477510393,
+					"parameters": {
+						"interval-seconds": "5.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 810470542836443,
+					"parameters": {
+						"name": "\"controllaSeCiSonoTuttiIFile\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 283544763022869
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "Impostazioni",
+					"sid": 289090174992118,
+					"parameters": {
+						"key": "\"cartellaSelezionata\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "Impostazioni",
+					"sid": 181961032432036,
+					"parameters": {
+						"key": "\"cartellaSelezionata\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 815387287919063,
+					"parameters": {
+						"variable": "cartellaSelezionata",
+						"value": "Impostazioni.Key"
+					}
+				}
+			],
+			"sid": 282306894507833
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "Impostazioni",
+					"sid": 574966915711979,
+					"parameters": {
+						"key": "\"cartellaSelezionata\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 531839646900704,
+					"parameters": {
+						"variable": "cartellaSelezionata",
+						"value": "NWjs.AppFolder"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "Impostazioni",
+					"sid": 862250710078234,
+					"parameters": {
+						"key": "\"cartellaSelezionata\"",
+						"value": "cartellaSelezionata"
+					}
+				}
+			],
+			"sid": 493779914427317
+		}
+	],
+	"sid": 379933313108696
+}

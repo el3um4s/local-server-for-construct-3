@@ -1,0 +1,269 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 9402,
+	"name": "Local Server for Construct 3",
+	"runtime": "c2",
+	"useWorker": false,
+	"bundleAddons": true,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r94.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r94.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r94.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"version": "r94.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r94.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NodeWebkit",
+			"name": "NW.js",
+			"author": "Scirra",
+			"version": "r94.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "ValerypopoffJSPlugin",
+			"name": "ValerypopoffJS",
+			"author": "Valera Popov",
+			"version": "0.6.2.1",
+			"bundled": true
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"version": "r94.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r94.2",
+			"bundled": false
+		}
+	],
+	"uniqueId": "65uvvxwj20n",
+	"cloudId": "{\"01853976085222409729_GOOGLE DRIVE\":\"1j7PUnt7-MAlwkCRXKzphetBqPxMunP4J\",\"auto:589adfc8daf11134\":\"b4f4435e9007e10a\"}",
+	"objectTypes": {
+		"items": [
+			"Function",
+			"Browser",
+			"NWjs",
+			"ValerypopoffJS",
+			"Impostazioni",
+			"riga",
+			"logoStraniAnelli",
+			"nomeApp"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"text_title",
+					"text_p",
+					"text_note",
+					"text_little"
+				],
+				"subfolders": [],
+				"name": "Text"
+			},
+			{
+				"items": [
+					"button"
+				],
+				"subfolders": [],
+				"name": "button"
+			},
+			{
+				"items": [
+					"textInput_circle"
+				],
+				"subfolders": [],
+				"name": "TextInput"
+			}
+		]
+	},
+	"containers": [],
+	"families": {
+		"items": [
+			"familyText"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Menu"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"evMenu"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "googlesans400.woff2",
+					"type": "font/woff2"
+				},
+				{
+					"name": "googlesans700.woff2",
+					"type": "font/woff2"
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "loading-logo.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png"
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "Note.txt",
+					"type": "text/plain"
+				}
+			],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "appUTILITY.js",
+							"type": "application/javascript"
+						},
+						{
+							"name": "appCONST.js",
+							"type": "application/javascript"
+						}
+					],
+					"subfolders": [],
+					"name": "JS"
+				}
+			]
+		}
+	},
+	"properties": {
+		"description": "A simple way to star a local server (https)",
+		"version": "0.18.04.11",
+		"author": "Strani Anelli",
+		"authorEmail": "el3um4s@gmail.com",
+		"authorWebsite": "https://github.com/el3um4s/local-server-for-construct-3",
+		"appId": "com.stranianelli.localserverforconstruct3",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "landscape",
+		"enableWebGL": true,
+		"sampling": "linear",
+		"downscaling": "medium",
+		"loaderStyle": "splash",
+		"preloadSounds": false,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true
+	},
+	"viewportWidth": 1000,
+	"viewportHeight": 500,
+	"firstLayout": null
+}

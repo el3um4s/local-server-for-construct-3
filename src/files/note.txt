@@ -1,0 +1,6 @@
+Versioni degli SDK ufficiali:
+
+	Plugin:		v1.3
+	Behavior:	v1.1
+	Effect:		v1.1
+	Theme:		v1.0.1

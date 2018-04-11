@@ -1,0 +1,10 @@
+{
+	"name": "Impostazioni",
+	"plugin-id": "LocalStorage",
+	"sid": 623879086910867,
+	"singleglobal-inst": {
+		"type": "Impostazioni",
+		"properties": {},
+		"uid": 39
+	}
+}

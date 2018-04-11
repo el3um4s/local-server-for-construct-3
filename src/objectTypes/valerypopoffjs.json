@@ -1,0 +1,12 @@
+{
+	"name": "ValerypopoffJS",
+	"plugin-id": "ValerypopoffJSPlugin",
+	"sid": 294547242776194,
+	"singleglobal-inst": {
+		"type": "ValerypopoffJS",
+		"properties": {
+			"Scriptfiles": "appUTILITY.js\nappCONST.js"
+		},
+		"uid": 17
+	}
+}

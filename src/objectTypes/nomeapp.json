@@ -1,0 +1,56 @@
+{
+	"name": "nomeApp",
+	"plugin-id": "Sprite",
+	"sid": 776418465604831,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 366,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 14,
+						"collisionPoly": {
+							"points": [
+								0.026525198938992044,
+								0.09615384615384616,
+								0.5,
+								0.6538461538461539,
+								0.9204244031830239,
+								0.27884615384615385,
+								0.9257294429708223,
+								0.5,
+								0.9363395225464191,
+								0.7692307692307693,
+								0.5,
+								0.75,
+								0.03183023872679045,
+								0.875,
+								0.002652519893899204,
+								0.5
+							]
+						},
+						"duration": 1
+					}
+				],
+				"sid": 546424596378722,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

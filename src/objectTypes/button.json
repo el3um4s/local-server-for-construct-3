@@ -1,0 +1,33 @@
+{
+	"name": "button",
+	"plugin-id": "Button",
+	"sid": 786058183981254,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "class",
+			"type": "string",
+			"desc": "classe da usare per gestire lo stile",
+			"sid": 404823672050114
+		},
+		{
+			"name": "onClick",
+			"type": "string",
+			"desc": "Comando generale da eseguire quando il pulsante viene cliccato",
+			"sid": 920965979195307
+		},
+		{
+			"name": "dettagliOnClick",
+			"type": "string",
+			"desc": "(optional) Dettagli del comando da eseguire",
+			"sid": 534178747630006
+		},
+		{
+			"name": "parametriOnClick1",
+			"type": "string",
+			"desc": "(optional) Primo parametro della funzione",
+			"sid": 763947165172997
+		}
+	],
+	"behaviorTypes": []
+}

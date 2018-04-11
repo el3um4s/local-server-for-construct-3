@@ -1,0 +1,21 @@
+{
+	"name": "familyText",
+	"plugin-id": "Text",
+	"sid": 406197246143346,
+	"instanceVariables": [
+		{
+			"name": "textSync",
+			"type": "string",
+			"desc": "Per sincronizzare il testo con una variabile",
+			"sid": 327923620492797
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"text_little",
+		"text_p",
+		"text_note",
+		"text_title"
+	]
+}

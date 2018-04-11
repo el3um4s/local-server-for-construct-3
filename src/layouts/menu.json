@@ -1,0 +1,1545 @@
+{
+	"name": "Menu",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "Plugin",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 5,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 632,
+						"y": 80,
+						"width": 200,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "Behavior",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 6,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 632,
+						"y": 192,
+						"width": 200,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "Effect",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 7,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 632,
+						"y": 256,
+						"width": 200,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "Editor Theme",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 8,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 632,
+						"y": 320,
+						"width": 200,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "c3-effect-sdk-v1.1.zip",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 1,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 288,
+						"width": 200,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "c3-theme-sdk-v1.0.1.zip",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 2,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 352,
+						"width": 200,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "c3-behavior-sdk-v1.1.zip",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 3,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 224,
+						"width": 200,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "c3-plugin-sdk-v.1.3.zip",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 9,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 112,
+						"width": 200,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Download",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 10,
+					"instanceVariables": {
+						"class": "secondary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://s1.construct.net/articles/downloads/2133/c3-plugin-sdk-v1.3.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 832,
+						"y": 96,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Download",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 11,
+					"instanceVariables": {
+						"class": "secondary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://s1.construct.net/articles/downloads/2131/c3-behavior-sdk-v1.1.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 832,
+						"y": 208,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Download",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 12,
+					"instanceVariables": {
+						"class": "secondary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://s1.construct.net/articles/downloads/2132/c3-effect-sdk-v1.1.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 832,
+						"y": 272,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Download",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 13,
+					"instanceVariables": {
+						"class": "secondary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://s1.construct.net/articles/downloads/856/c3-theme-sdk-v1.0.1.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 832,
+						"y": 336,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Single Global",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 18,
+					"instanceVariables": {
+						"class": "tertiary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/official-sdk-zip/Single%20Global%20Plugin.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 136,
+						"width": 88,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Text",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 19,
+					"instanceVariables": {
+						"class": "tertiary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/official-sdk-zip/Text%20Plugin.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 736,
+						"y": 136,
+						"width": 40,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Drawing",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 20,
+					"instanceVariables": {
+						"class": "tertiary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/official-sdk-zip/Drawing%20Plugin.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 784,
+						"y": 136,
+						"width": 64,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Custom Importer",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 21,
+					"instanceVariables": {
+						"class": "tertiary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/official-sdk-zip/Custom%20Importer%20Plugin.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 856,
+						"y": 136,
+						"width": 104,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "v0.04.12",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 22,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": -16,
+						"y": -40,
+						"width": 64,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Choose Folder",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 23,
+					"instanceVariables": {
+						"class": "secondary",
+						"onClick": "chooseFolder",
+						"dettagliOnClick": "",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 72,
+						"y": 96,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Copy settings",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 24,
+					"instanceVariables": {
+						"class": "secondary",
+						"onClick": "copiaFileLocalServer",
+						"dettagliOnClick": "",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 72,
+						"y": 160,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "Node.js v8.0.0+ required. If not installed:\n  1. Download the Windows installer from the Nodes.js® web site.",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 26,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 112,
+						"y": 200,
+						"width": 512,
+						"height": 48,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "1)",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 27,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 32,
+						"y": 96,
+						"width": 24,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "2)",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 28,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 32,
+						"y": 160,
+						"width": 24,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "3a)",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 29,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 64,
+						"y": 200,
+						"width": 40,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "  2. Run the installer (the .msi file you downloaded in the previous step.)\n  3. Follow the prompts in the installer (Accept the license agreement, click the NEXT button a bunch of times and accept the default installation settings).",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 30,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 112,
+						"y": 288,
+						"width": 512,
+						"height": 112,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "download Node.js",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 31,
+					"instanceVariables": {
+						"class": "tertiary",
+						"onClick": "openLink",
+						"dettagliOnClick": "https://nodejs.org/",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 120,
+						"y": 248,
+						"width": 136,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "3b)",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 32,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 72,
+						"y": 400,
+						"width": 40,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Install Local Server",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 33,
+					"instanceVariables": {
+						"class": "secondary",
+						"onClick": "npmInstall",
+						"dettagliOnClick": "",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 120,
+						"y": 400,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "4)",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 34,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 32,
+						"y": 456,
+						"width": 24,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "HTTP (p:65432)",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 35,
+					"instanceVariables": {
+						"class": "primary",
+						"onClick": "npmStartServer",
+						"dettagliOnClick": "",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 216,
+						"y": 456,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "text_little",
+					"properties": {
+						"text": "Plugin\nriga",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 36,
+					"instanceVariables": {
+						"textSync": "cartellaSelezionata"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 208,
+						"y": 96,
+						"width": 416,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "textInput_circle",
+					"properties": {
+						"text": "",
+						"placeholder": "",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"read-only": true,
+						"spell-check": false,
+						"type": "text",
+						"auto-font-size": true,
+						"id": ""
+					},
+					"uid": 37,
+					"instanceVariables": {
+						"sync": "LOCAL_SERVER_generalfile_settings",
+						"class": "red"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 208,
+						"y": 168,
+						"width": 24,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "textInput_circle",
+					"properties": {
+						"text": "",
+						"placeholder": "",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"read-only": true,
+						"spell-check": false,
+						"type": "text",
+						"auto-font-size": true,
+						"id": ""
+					},
+					"uid": 38,
+					"instanceVariables": {
+						"sync": "LOCAL_SERVER_generalinstalled_settings",
+						"class": "red"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 256,
+						"y": 408,
+						"width": 24,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "riga",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 40,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 624,
+						"y": 301,
+						"width": 2,
+						"height": 625,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "logoStraniAnelli",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 42,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 856,
+						"y": 472,
+						"width": 214.32139839051638,
+						"height": 41.271094061749004,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "nomeApp",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 43,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 120,
+						"y": 40,
+						"width": 219.6,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_p",
+					"properties": {
+						"text": "Official SDK",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2980392156862745,
+							0.2980392156862745,
+							0.2980392156862745,
+							1
+						],
+						"horizontal-alignment": "right",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 25,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 760,
+						"y": 40,
+						"width": 200,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "Don't use spaces in Folder Path",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 4,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 72,
+						"y": 128,
+						"width": 552,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "HTTPS (p:8080)",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 41,
+					"instanceVariables": {
+						"class": "secondary",
+						"onClick": "npmStartServerSSL",
+						"dettagliOnClick": "",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 360,
+						"y": 456,
+						"width": 128,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "text_note",
+					"properties": {
+						"text": "Start Local Server",
+						"enable-bbcode": false,
+						"font": "googlesans400",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.4980392156862745,
+							0.4980392156862745,
+							0.4980392156862745,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 44,
+					"instanceVariables": {
+						"textSync": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 56,
+						"y": 464,
+						"width": 152,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				}
+			],
+			"sid": 758897630096769,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		}
+	],
+	"sid": 992738593746775,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 1000,
+	"height": 500,
+	"unboundedScrolling": false,
+	"eventSheet": "evMenu"
+}

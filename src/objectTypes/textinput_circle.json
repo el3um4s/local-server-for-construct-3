@@ -1,0 +1,21 @@
+{
+	"name": "textInput_circle",
+	"plugin-id": "TextBox",
+	"sid": 404444028988627,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "sync",
+			"type": "string",
+			"desc": "",
+			"sid": 468168755707822
+		},
+		{
+			"name": "class",
+			"type": "string",
+			"desc": "",
+			"sid": 793676387082055
+		}
+	],
+	"behaviorTypes": []
+}
