@@ -505,7 +505,7 @@
 					"instanceVariables": {
 						"class": "tertiary",
 						"onClick": "downloadOnLine",
-						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/official-sdk-zip/Single%20Global%20Plugin.zip",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/singleGlobalPlugin.zip",
 						"parametriOnClick1": ""
 					},
 					"behaviors": {},
@@ -540,7 +540,7 @@
 					"instanceVariables": {
 						"class": "tertiary",
 						"onClick": "downloadOnLine",
-						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/official-sdk-zip/Text%20Plugin.zip",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/editorTextPlugin.zip",
 						"parametriOnClick1": ""
 					},
 					"behaviors": {},
@@ -575,7 +575,7 @@
 					"instanceVariables": {
 						"class": "tertiary",
 						"onClick": "downloadOnLine",
-						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/official-sdk-zip/Drawing%20Plugin.zip",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/drawingPlugin.zip",
 						"parametriOnClick1": ""
 					},
 					"behaviors": {},
@@ -610,7 +610,7 @@
 					"instanceVariables": {
 						"class": "tertiary",
 						"onClick": "downloadOnLine",
-						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/official-sdk-zip/Custom%20Importer%20Plugin.zip",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/customImporterPlugin.zip",
 						"parametriOnClick1": ""
 					},
 					"behaviors": {},
@@ -1536,7 +1536,14 @@
 		}
 	],
 	"sid": 992738593746775,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Dictionary",
+			"properties": {},
+			"uid": 39,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1000,
 	"height": 500,

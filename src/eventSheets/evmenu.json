@@ -45,20 +45,75 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 706702994814261
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "NWjs",
+					"sid": 319470775089101,
+					"parameters": {
+						"width": "1000"
+					}
+				},
+				{
+					"id": "set-height",
+					"objectClass": "NWjs",
+					"sid": 230051554588049,
+					"parameters": {
+						"height": "500"
+					}
+				},
+				{
+					"id": "set-minimum-size",
+					"objectClass": "NWjs",
+					"sid": 477870312068766,
+					"parameters": {
+						"min-width": "1000",
+						"min-height": "500"
+					}
+				},
+				{
+					"id": "set-maximum-size",
+					"objectClass": "NWjs",
+					"sid": 668243209983385,
+					"parameters": {
+						"max-width": "1000",
+						"max-height": "500"
+					}
+				},
+				{
+					"id": "set-resizable",
+					"objectClass": "NWjs",
+					"sid": 143694511525612,
+					"parameters": {
+						"mode": "not-resizable"
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 363344554977982,
+					"parameters": {
+						"key": "\"cartellaSelezionata\""
+					}
+				}
+			],
+			"sid": 563377227326062
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-loader-layout-complete",
 					"objectClass": "System",
 					"sid": 620879942152188
 				}
 			],
 			"actions": [
-				{
-					"id": "set-resizable",
-					"objectClass": "NWjs",
-					"sid": 315538616354497,
-					"parameters": {
-						"mode": "not-resizable"
-					}
-				},
 				{
 					"id": "call-function",
 					"objectClass": "Function",
@@ -97,60 +152,6 @@
 					"parameters": {
 						"name": "\"controllaSeCiSonoTuttiIFile\"",
 						"parameter-n": []
-					}
-				},
-				{
-					"id": "check-item-exists",
-					"objectClass": "Impostazioni",
-					"sid": 707571654690613,
-					"parameters": {
-						"key": "\"cartellaSelezionata\""
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "NWjs",
-					"sid": 778068073959495,
-					"disabled": true,
-					"parameters": {
-						"width": "1000"
-					}
-				},
-				{
-					"id": "set-height",
-					"objectClass": "NWjs",
-					"sid": 574546305868708,
-					"disabled": true,
-					"parameters": {
-						"height": "500"
-					}
-				},
-				{
-					"id": "set-minimum-size",
-					"objectClass": "NWjs",
-					"sid": 796658847119332,
-					"disabled": true,
-					"parameters": {
-						"min-width": "1000",
-						"min-height": "500"
-					}
-				},
-				{
-					"id": "set-maximum-size",
-					"objectClass": "NWjs",
-					"sid": 241983320444744,
-					"disabled": true,
-					"parameters": {
-						"max-width": "1000",
-						"max-height": "500"
-					}
-				},
-				{
-					"id": "set-resizable",
-					"objectClass": "NWjs",
-					"sid": 813070890989102,
-					"parameters": {
-						"mode": "not-resizable"
 					}
 				}
 			],
@@ -757,15 +758,6 @@
 					}
 				},
 				{
-					"id": "set-item",
-					"objectClass": "Impostazioni",
-					"sid": 143910124531572,
-					"parameters": {
-						"key": "\"cartellaSelezionata\"",
-						"value": "cartellaSelezionata"
-					}
-				},
-				{
 					"id": "call-function",
 					"objectClass": "Function",
 					"sid": 658240690582923,
@@ -781,6 +773,24 @@
 					"parameters": {
 						"name": "\"controllaSeCiSonoTuttiIFile\"",
 						"parameter-n": []
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "Dictionary",
+					"sid": 854008327919651,
+					"parameters": {
+						"key": "\"cartellaSelezionata\"",
+						"value": "cartellaSelezionata"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 727986523815428,
+					"parameters": {
+						"key": "\"cartellaSelezionata\"",
+						"value": "cartellaSelezionata"
 					}
 				}
 			],
@@ -1971,6 +1981,15 @@
 						"name": "\"controllaSeCiSonoTuttiIFile\"",
 						"parameter-n": []
 					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 375809544675997,
+					"parameters": {
+						"name": "\"sincronizzaTesto\"",
+						"parameter-n": []
+					}
 				}
 			],
 			"sid": 283544763022869
@@ -1980,8 +1999,8 @@
 			"conditions": [
 				{
 					"id": "on-item-exists",
-					"objectClass": "Impostazioni",
-					"sid": 289090174992118,
+					"objectClass": "LocalStorage",
+					"sid": 310233630469587,
 					"parameters": {
 						"key": "\"cartellaSelezionata\""
 					}
@@ -1990,31 +2009,22 @@
 			"actions": [
 				{
 					"id": "get-item",
-					"objectClass": "Impostazioni",
-					"sid": 181961032432036,
+					"objectClass": "LocalStorage",
+					"sid": 109579695134846,
 					"parameters": {
 						"key": "\"cartellaSelezionata\""
 					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 815387287919063,
-					"parameters": {
-						"variable": "cartellaSelezionata",
-						"value": "Impostazioni.Key"
-					}
 				}
 			],
-			"sid": 282306894507833
+			"sid": 885747787540859
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-item-missing",
-					"objectClass": "Impostazioni",
-					"sid": 574966915711979,
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 277496411250075,
 					"parameters": {
 						"key": "\"cartellaSelezionata\""
 					}
@@ -2022,25 +2032,104 @@
 			],
 			"actions": [
 				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 887496033991441,
+					"parameters": {
+						"key": "\"cartellaSelezionata\"",
+						"value": "LocalStorage.ItemValue"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 531839646900704,
+					"sid": 424776130920105,
+					"parameters": {
+						"variable": "cartellaSelezionata",
+						"value": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 254623594679625,
+					"parameters": {
+						"name": "\"controllaSeCiSonoTuttiIFile\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 381535318511191,
+					"parameters": {
+						"name": "\"sincronizzaTesto\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 868629798380296
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 784345227581199,
+					"parameters": {
+						"key": "\"cartellaSelezionata\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 448008258946749,
+					"parameters": {
+						"key": "\"cartellaSelezionata\"",
+						"value": "NWjs.AppFolder"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "Dictionary",
+					"sid": 273183218234164,
+					"parameters": {
+						"key": "\"cartellaSelezionata\"",
+						"value": "NWjs.AppFolder"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 107528242967802,
 					"parameters": {
 						"variable": "cartellaSelezionata",
 						"value": "NWjs.AppFolder"
 					}
 				},
 				{
-					"id": "set-item",
-					"objectClass": "Impostazioni",
-					"sid": 862250710078234,
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 770264131337086,
 					"parameters": {
-						"key": "\"cartellaSelezionata\"",
-						"value": "cartellaSelezionata"
+						"name": "\"controllaSeCiSonoTuttiIFile\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 889411480187709,
+					"parameters": {
+						"name": "\"sincronizzaTesto\"",
+						"parameter-n": []
 					}
 				}
 			],
-			"sid": 493779914427317
+			"sid": 646771337554980
 		}
 	],
 	"sid": 379933313108696
