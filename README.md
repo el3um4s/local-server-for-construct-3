@@ -6,7 +6,7 @@ A simple Windows app built with Construct 3. You can choose a folder and start a
 
 ### How to Install
 
-Download the [Local.Server.for.Construct.3.zip](https://github.com/el3um4s/local-server-for-construct-3/releases/download/v1.18.04.11/Local.Server.for.Construct.3.zip) from the [releases page](https://github.com/el3um4s/local-server-for-construct-3/releases). Then extract the zip and launch the "Local Server for Construct 3.exe" file.
+Download the [Local.Server.for.Construct.3.zip](https://github.com/el3um4s/local-server-for-construct-3/releases/download/v2.19.05.12/Local.Server.for.Construct.3-19.05.12.zip) from the [releases page](https://github.com/el3um4s/local-server-for-construct-3/releases). Then extract the zip and launch the "Local Server for Construct 3.exe" file.
 
 ### How to Use
 
