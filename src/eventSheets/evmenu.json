@@ -230,10 +230,10 @@
 								{
 									"id": "invoke-download",
 									"objectClass": "Browser",
-									"sid": 430674114853958,
+									"sid": 192057341959119,
 									"parameters": {
-										"url": "button.dettagliOnClick",
-										"filename": "\"\""
+										"url": "URLDecode(button.dettagliOnClick)",
+										"filename": "\"download\""
 									}
 								}
 							],

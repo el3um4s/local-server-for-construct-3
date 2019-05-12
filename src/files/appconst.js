@@ -78,8 +78,8 @@ const LOCAL_SERVER_package_json = `{
   "description": "A simple way to star a local server (https)",
   "main": "index.js",
   "scripts": {
-	"serve": "./node_modules/.bin/http-server -o -a localhost -p 65432 --cors",
-    "servessl": "./node_modules/.bin/http-server -o -a localhost -p 8080 -C cert.pem -K key.pem --ssl --cors"
+	"serve": "./node_modules/.bin/http-server -c1 -o -a localhost -p 65432 --cors",
+    "servessl": "./node_modules/.bin/http-server -c1 -o -a localhost -p 8080 -C cert.pem -K key.pem --ssl --cors"
   },
   "author": "Strani Anelli",
   "license": "MIT",

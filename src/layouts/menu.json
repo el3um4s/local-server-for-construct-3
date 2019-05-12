@@ -77,7 +77,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 632,
-						"y": 192,
+						"y": 248,
 						"width": 200,
 						"height": 32,
 						"originX": 0,
@@ -120,7 +120,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 632,
-						"y": 256,
+						"y": 312,
 						"width": 200,
 						"height": 32,
 						"originX": 0,
@@ -163,7 +163,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 632,
-						"y": 320,
+						"y": 376,
 						"width": 200,
 						"height": 32,
 						"originX": 0,
@@ -206,7 +206,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 288,
+						"y": 344,
 						"width": 200,
 						"height": 24,
 						"originX": 0,
@@ -249,7 +249,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 352,
+						"y": 408,
 						"width": 200,
 						"height": 24,
 						"originX": 0,
@@ -266,7 +266,7 @@
 				{
 					"type": "text_note",
 					"properties": {
-						"text": "c3-behavior-sdk-v1.1.zip",
+						"text": "c3-behavior-sdk-v1.3.zip",
 						"enable-bbcode": false,
 						"font": "googlesans400",
 						"size": 12,
@@ -292,7 +292,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 224,
+						"y": 280,
 						"width": 200,
 						"height": 24,
 						"originX": 0,
@@ -309,7 +309,7 @@
 				{
 					"type": "text_note",
 					"properties": {
-						"text": "c3-plugin-sdk-v.1.3.zip",
+						"text": "c3-plugin-sdk-v.1.6.zip",
 						"enable-bbcode": false,
 						"font": "googlesans400",
 						"size": 12,
@@ -365,7 +365,7 @@
 					"instanceVariables": {
 						"class": "secondary",
 						"onClick": "downloadOnLine",
-						"dettagliOnClick": "https://s1.construct.net/articles/downloads/2133/c3-plugin-sdk-v1.3.zip",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/c3-plugin-sdk-v1.6.zip",
 						"parametriOnClick1": ""
 					},
 					"behaviors": {},
@@ -400,13 +400,13 @@
 					"instanceVariables": {
 						"class": "secondary",
 						"onClick": "downloadOnLine",
-						"dettagliOnClick": "https://s1.construct.net/articles/downloads/2131/c3-behavior-sdk-v1.1.zip",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/c3-behavior-sdk-v1.3.zip",
 						"parametriOnClick1": ""
 					},
 					"behaviors": {},
 					"world": {
 						"x": 832,
-						"y": 208,
+						"y": 264,
 						"width": 128,
 						"height": 32,
 						"originX": 0,
@@ -435,13 +435,13 @@
 					"instanceVariables": {
 						"class": "secondary",
 						"onClick": "downloadOnLine",
-						"dettagliOnClick": "https://s1.construct.net/articles/downloads/2132/c3-effect-sdk-v1.1.zip",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/c3-effect-sdk-v1.1.zip",
 						"parametriOnClick1": ""
 					},
 					"behaviors": {},
 					"world": {
 						"x": 832,
-						"y": 272,
+						"y": 328,
 						"width": 128,
 						"height": 32,
 						"originX": 0,
@@ -470,13 +470,13 @@
 					"instanceVariables": {
 						"class": "secondary",
 						"onClick": "downloadOnLine",
-						"dettagliOnClick": "https://s1.construct.net/articles/downloads/856/c3-theme-sdk-v1.0.1.zip",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/c3-theme-sdk-v1.0.1.zip",
 						"parametriOnClick1": ""
 					},
 					"behaviors": {},
 					"world": {
 						"x": 832,
-						"y": 336,
+						"y": 392,
 						"width": 128,
 						"height": 32,
 						"originX": 0,
@@ -1330,7 +1330,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 120,
+						"x": 128,
 						"y": 40,
 						"width": 219.6,
 						"height": 60,
@@ -1507,6 +1507,82 @@
 							1
 						],
 						"angle": 0
+					}
+				},
+				{
+					"type": "button",
+					"properties": {
+						"type": "button",
+						"text": "Dom Element",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 47,
+					"instanceVariables": {
+						"class": "tertiary",
+						"onClick": "downloadOnLine",
+						"dettagliOnClick": "https://github.com/el3um4s/local-server-for-construct-3/raw/master/sdk-official/domElementPlugin.zip",
+						"parametriOnClick1": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 176,
+						"width": 88,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "version",
+					"properties": {
+						"text": "v0.19.05.12",
+						"enable-bbcode": false,
+						"font": "Arial",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.011764705882352941,
+							0.6588235294117647,
+							0.48627450980392156,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 48,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 80,
+						"width": 80,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469
 					}
 				}
 			],

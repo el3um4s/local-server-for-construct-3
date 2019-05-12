@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 9402,
+	"savedWithRelease": 14800,
 	"name": "Local Server for Construct 3",
 	"runtime": "c2",
 	"useWorker": false,
@@ -11,7 +11,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "TextBox",
 			"name": "Text input",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Function",
 			"name": "Function",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "Browser",
 			"name": "Browser",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "NodeWebkit",
 			"name": "NW.js",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "Dictionary",
 			"name": "Dictionary",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		},
 		{
@@ -83,12 +83,11 @@
 			"id": "LocalStorage",
 			"name": "Local storage",
 			"author": "Scirra",
-			"version": "r94.2",
+			"version": "r148",
 			"bundled": false
 		}
 	],
 	"uniqueId": "65uvvxwj20n",
-	"cloudId": "{\"01853976085222409729_GOOGLE DRIVE\":\"1j7PUnt7-MAlwkCRXKzphetBqPxMunP4J\",\"auto:589adfc8daf11134\":\"b4f4435e9007e10a\"}",
 	"objectTypes": {
 		"items": [
 			"Function",
@@ -99,7 +98,8 @@
 			"logoStraniAnelli",
 			"nomeApp",
 			"Dictionary",
-			"LocalStorage"
+			"LocalStorage",
+			"version"
 		],
 		"subfolders": [
 			{
@@ -128,6 +128,7 @@
 			}
 		]
 	},
+	"autosaveData": null,
 	"containers": [],
 	"families": {
 		"items": [
@@ -231,9 +232,13 @@
 			]
 		}
 	},
+	"timelines": {
+		"items": [],
+		"subfolders": []
+	},
 	"properties": {
 		"description": "A simple way to star a local server (https)",
-		"version": "0.18.04.11",
+		"version": "0.19.05.12",
 		"author": "Strani Anelli",
 		"authorEmail": "el3um4s@gmail.com",
 		"authorWebsite": "https://github.com/el3um4s/local-server-for-construct-3",
@@ -265,8 +270,10 @@
 		"useHighDpi": true,
 		"orientations": "landscape",
 		"enableWebGL": true,
-		"sampling": "linear",
+		"gpuPreference": "high-performance",
+		"sampling": "trilinear",
 		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "splash",
 		"preloadSounds": false,
 		"clearBackground": true,
